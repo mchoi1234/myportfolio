@@ -1,0 +1,354 @@
+.projectsPage {
+   height: auto; /* Allow height to grow based on content */
+   /* Takes up full viewport height */
+   top: 35px;
+   position: relative;
+   background-color: #686666;
+}
+
+
+.projectsTitle{
+   padding-top: 10px;
+   padding-bottom: 5px;
+   font-weight: 400;
+   color: rgb(250, 247, 247);
+   margin-left: 4%;
+
+   font-size: clamp(25px, 2.5vh, 40px); /* Minimum 25px, preferred 2.5vh, max 40px */
+}
+
+.projectsList { /* where every list; list parent */
+   background-color: rgb(250, 247, 247);
+   height: auto;
+   list-style: none;
+   
+   display: flex;
+   flex-direction: column;
+}
+
+.projectsList li {
+
+   background-color: rgb(250, 247, 247);
+   padding-top: 20px;
+
+   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+   width: 100%;
+   height: auto;
+   gap: 20px; /*gap between each element inside list object*/
+   margin-bottom: 40px;
+   display: flex;
+   flex-direction: row;
+
+   flex-wrap: wrap; /*makes description part wrap to next line if there's not enough space*/
+
+}
+
+.projectListLeftSide{
+ width: 43%;
+}
+
+.projectListRightSide {
+   width: 43%;
+}
+
+.listDivisionLineParent{
+height: auto;
+margin-top: 1%;
+margin-bottom: 3%;
+margin-left: 5%;
+width: 2px;
+background: #686666;
+}
+
+
+
+.projectListTitle {
+  
+  color: #000;
+   font-weight: 400;
+
+   background-color: #EFD190;
+
+   padding-top: 10px;
+   padding-bottom: 10px;
+   border-radius: 15px;
+   margin-left: -4vw;
+   margin-bottom: 20px;
+   width: 100%;
+   min-width: 470px;
+}
+h3{
+   margin-left: 7vw;
+   white-space: nowrap;
+   font-weight: 400;
+font-size: clamp(20px, 2.5vw, 25px);
+   /* Minimum 25px, preferred 2.5vh, max 40px */
+}
+
+.projectPicture {
+   width: 96%;
+      /* Let the width adjust to the parent container */
+      height: auto;
+      /* Automatically scale height based on width */
+      margin-left: 8%;
+      margin-right: 2%;
+      margin-bottom: 40px;
+      /* Ensure some margin */
+      background-color: #ddd;
+      /* Fallback background */
+      overflow: hidden;
+      /* Prevent overflow */
+      aspect-ratio: 14 / 9;
+      /* Maintain a standard video aspect ratio */
+}
+
+.projectPicture video {
+   width: 100%;
+   /* Make the video take the full width of its container */
+   height: 100%;
+   object-fit: cover;
+   /* Ensures the video covers the container fully without distortion */
+}
+
+.twoPictures{
+   width: 96%;
+      /* Let the width adjust to the parent container */
+      height: auto;
+      /* Automatically scale height based on width */
+      margin-left: 8%;
+      margin-right: 2%;
+      margin-bottom: 40px;
+      /* Ensure some margin */
+      /* Fallback background */
+      overflow: hidden;
+      /* Prevent overflow */
+      aspect-ratio: 10 / 9;
+      /* Maintain a standard video aspect ratio */
+         border-radius: 10px;
+}
+.firstPic img{
+   height: auto;
+   width: 100%;
+   margin-bottom: 15px;
+}
+.secondPic img{
+   height: auto;
+   width: 100%;
+}
+.secondPic:hover img{
+   /* Enlarges the image slightly */
+   transform: scale(1.1);
+   /* enlarge slowly */
+   transition: transform 0.3s;
+}
+
+.projectDescription {
+   width: 90%;
+   margin-left: 9%;
+   margin-top: 5%;
+   /* Adjust as needed */
+}
+
+.projectDescriptionText {
+   font-size: clamp(18px, 1vw, 35px);
+   color: #333;
+   line-height: 1.5;
+   margin-bottom: 30px;
+}
+
+.projectTags {
+   border: 2px solid #686666; /* 2px border with black color */
+   border-radius: 8px; /* Optional: Rounded corners for a smoother look */
+   padding: 20px; /* Optional: Adds padding inside the border */
+   height: 40%;
+      margin-bottom: 30px;
+}
+
+.projectTags ul {
+   list-style: none;
+   padding: 0;
+   display: flex;
+   flex-wrap: wrap;
+
+   column-gap: 10px;
+   row-gap: 5px;/* Smaller vertical gap */
+}
+
+.projectTags li {
+   background-color: #8D8585;
+   padding: 5px 15px;
+   border-radius: 10px;
+   font-size: clamp(15px, 1vw ,25px);
+   color: #FFF;
+
+   margin-bottom: 10px;
+   width: auto; /* Make width adjust to the text size */
+}
+.tagText{
+   margin-bottom: 15px;
+   font-size: clamp(17px, 1vw, 25px);
+}
+
+.resumeSection{
+
+   font-weight: 400;
+   background-color: #EFD190;
+
+   height: clamp(70px, 5.5vh, 80px);
+   
+}
+.resumeBlueBorder{
+   width: clamp(320px, 30vw, 600px);
+   height: 100%;
+   background-color: #9CD4DC;
+   /*
+   padding-top: 15px;
+   padding-bottom: 15px; */
+   padding-left: 4%;
+   position: relative;
+      /* Minimum 25px, preferred 2.5vh, max 40px */
+}
+.resumeWhiteBorder{
+      width: clamp(200px, 70%, 420px);
+         height: 70%;
+         background-color: rgb(250, 247, 247);
+         /*
+         padding-top: 15px;
+         padding-bottom: 15px; */
+         margin-top: 10px;
+         padding-left: 4%;
+         position: absolute;
+         border-radius: 10px;
+         
+}
+.resumeSection h2{
+   font-size: clamp(25px, 2.5vh, 40px);
+   position: absolute;
+   color: #333;
+   text-decoration: underline;
+
+   margin-top: 12px;
+   padding-bottom: 15px;
+   white-space: nowrap;
+   font-weight: 400;
+}
+.resumeSection h2:hover {
+   color: #EFD190;
+   /* Change to orange when clicked */
+}
+
+.contactsSection {
+   padding: 20px;
+   font-weight: 400;
+   color: rgb(250, 247, 247);
+   margin-left: 4%;
+   margin-right: 5%;
+   position: relative;
+
+   margin-top: 30px;
+   /* Minimum 25px, preferred 2.5vh, max 40px */
+}
+.contactsSection h2 {
+   font-size: clamp(25px, 2.5vh, 40px);
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+.contactsSection .mainContent {
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   margin-bottom: 40px;
+   gap: 50px;
+}
+
+.contactsSection .introText {
+   flex: 0 0 45%;
+   text-align: left;
+   font-size: clamp(18px, 1vw, 35px);
+   font-weight: 300;
+   margin: 0;
+   padding-right: 10px;
+   /* Add space between text and links */
+}
+.contactsSection .contactLinks {
+   display: flex;
+   flex-direction: column;
+   text-align: left;
+}
+
+.contactsSection .contactLinks a {
+   text-decoration: none;
+   color: rgb(250, 247, 247);
+   /* Blue links */
+   font-size: 16px;
+   margin: 5px 0;
+}
+
+.contactsSection .contactLinks a:hover {
+   text-decoration: underline;
+}
+
+.contactsSection .emailAddress{
+   display: block;
+   margin-bottom: 7px;
+   /* Force these elements to be on separate lines */
+}
+.contactsSection .rightsReserved {
+   font-size: 12px;
+   /* Smaller text */
+   color: #b1aeae;
+   /* Grey color */
+   text-align: right;
+   position: absolute;
+   bottom: 5px;
+   right: 10px;
+   margin-right: -5%;
+}
+
+
+@media (max-aspect-ratio: 1.1) or (max-width: 1100px){
+
+  .projectListLeftSide {
+     width: 100%;
+     margin-left: 2%;
+      margin-right: 2%;
+      
+  }
+  .projectListTitle {
+
+     width: 90%;
+     min-width: 450px;
+  }
+
+  .projectListRightSide {
+     width: 100%;
+     right: 0%;
+  }
+   .listDivisionLineParent {
+      display: none;
+         /* Hide the element */
+   }
+   .projectPicture{
+      margin-bottom: 20px;
+      margin-left: 1.8%;
+   }
+   .twoPictures{
+      margin-bottom: 20px;
+      margin-left: 1.8%;
+   }
+   .projectsList li {
+      gap:0;
+   }
+   .projectDescription {
+      margin-top: 0px;
+      margin-left: 6%;
+   }
+
+ .contactsSection .introText {
+   flex: 0 100% ;
+   font-size: 17px;
+ }
+ 
+      
+}
