@@ -29,7 +29,7 @@ class ErrorBoundary extends React.Component {
 
 function LongPenObject() {
   //Instantiate a loader for the .gltf file
-  const gltf = useGLTF('/longPen.glb'); // Adjust path as needed
+  const gltf = useGLTF('./myportfolio/longPen.glb'); // Adjust path as needed
   return (
       <primitive 
         object={gltf.scene} 

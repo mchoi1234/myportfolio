@@ -65,11 +65,11 @@ function ProjectsPage() {
               </div>
                   <div className='twoPictures'>
                     <div className='firstPic'>
-                      <img src="/EvergreenFirstPic1.png" alt="adventure game first picture" />
+                      <img src="./EvergreenFirstPic1.png" alt="adventure game first picture" />
                     </div>
                       <a href="https://play.google.com/store/apps/details?id=com.munchgames.evergreensocietyofwitches&hl=en_US" target="_blank" rel="noopener noreferrer">
                           <div className='secondPic'>
-                            <img src="/EvergreenSecondPic.png" alt="adventure game second picture, click to view example" />
+                            <img src="./EvergreenSecondPic.png" alt="adventure game second picture, click to view example" />
                           </div>
                       </a>
                   </div>
