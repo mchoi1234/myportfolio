@@ -24,7 +24,7 @@ function App() {
   const [finishedScrolling, setfinishedScrolling] = useState(false)
 
   return (
-       <Router>
+    <Router basename="/myportfolio">
       <Routes>
         <Route path="/" element={<MainPage />} /> {/* Your main page */}
         <Route path="/resume" element={<ResumePage />} /> {/* Resume page */}
