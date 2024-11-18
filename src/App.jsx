@@ -24,8 +24,8 @@ function App() {
   const [finishedScrolling, setfinishedScrolling] = useState(false)
 
   return (
-    <Router>
-      <Routes>
+    <Router basename="/myportfolio" >
+      <Routes future={{ v7_relativeSplatPath: true }}>
         <Route path="/" element={<MainPage />} /> {/* Your main page */}
         <Route path="/resume" element={<ResumePage />} /> {/* Resume page */}
        </Routes>

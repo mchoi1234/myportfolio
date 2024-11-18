@@ -29,7 +29,7 @@ class ErrorBoundary extends React.Component {
 
 function LongPenObject() {
   //Instantiate a loader for the .gltf file
-  const gltf = useGLTF('./myportfolio/longPen.glb'); // Adjust path as needed
+  const gltf = useGLTF('/myportfolio/longPen.glb'); // Adjust path as needed
   return (
       <primitive 
         object={gltf.scene} 
@@ -59,7 +59,7 @@ function SDCardObject() {
 
 function LargeWheelObject() {
   //Instantiate a loader for the .gltf file
-  const gltf = useGLTF('/largeWheel.glb'); // Adjust path as needed
+  const gltf = useGLTF('/myportfolio/largeWheel.glb'); // Adjust path as needed
   return (
       <primitive 
       object={gltf.scene} 
@@ -73,7 +73,7 @@ function LargeWheelObject() {
 
 function LighterBulbObject() {
   //Instantiate a loader for the .gltf file
-  const gltf = useGLTF('/lightbulbFixed.glb'); // Adjust path as needed
+  const gltf = useGLTF('/myportfolio/lightbulbFixed.glb'); // Adjust path as needed
   return (
       <primitive 
         object={gltf.scene} 
